@@ -2,6 +2,8 @@
 
 nome repo: `laravel-migration-seeder`
 
+## Giorno 1
+
 Creiamo una tabella trains tramite la relativa Migration.
 
 Ogni treno dovrà avere:
@@ -25,3 +27,21 @@ Create Model relativo ed un Controller per mostrare nella home page tutti i tren
 ### Bonus
 
 Create una seconda migration per aggiungere/modificare una colonna della tabella
+
+## Giorno 2
+
+oggi proseguiamo con l'esercizio di ieri Train Station, sempre nella stessa repo: `laravel-migration-seeder`
+
+Aggiungiamo un seeder per la classe Train usando FakerPHP.
+
+### Bonus 1
+
+Implementare il seeder tramite un file csv.
+
+### Bonus 2
+
+Implementare la paginazione dei risultati.
+Per formattare correttamente i links:
+
+1. importare la classe Paginator con `use Illuminate\Pagination\Paginator;` nel file `app\Providers\AppServiceProvider.php`
+2. aggiungere la riga `Paginator::useBootstrap();` nel metodo `boot()`
